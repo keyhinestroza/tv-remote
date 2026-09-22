@@ -36,7 +36,7 @@ dedos silencia. Antes usaba los botones físicos del iPhone, pero la directriz 2
 App Store prohíbe cambiar la función de los interruptores estándar, así que se quitó.
 
 Como un gesto que nadie ve no existe, se explica en cuatro sitios: una pantalla de la guía
-de inicio, un recordatorio flotante las dos primeras conexiones (que deja de salir en cuanto
+de inicio, un recordatorio flotante cada vez que se abre la app (que deja de salir en cuanto
 se usa el gesto), la pantalla de ayuda, y los botones de siempre en la hoja de Opciones.
 Subir, bajar y silenciar están además como acciones de VoiceOver, porque con el lector
 activo el gesto no llega a la app.

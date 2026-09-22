@@ -17,8 +17,6 @@ enum TVConfig {
         /// Versión de la guía que el usuario ya vio. Al subirla, la guía vuelve a salir
         /// una vez, que es como se entera de lo que cambió.
         static let guideVersion = "guiaVersion"
-        /// Cuántas veces se mostró el recordatorio del gesto del volumen.
-        static let volumeHintCount = "avisoVolumen"
         /// true en cuanto el usuario usa el gesto: el recordatorio ya no hace falta.
         static let volumeGestureUsed = "gestoVolumenUsado"
     }

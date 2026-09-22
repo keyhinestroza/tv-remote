@@ -12,7 +12,6 @@ struct RemoteView: View {
     @State private var searchOnOpenSettings = false
     @State private var showGuide = false
     @AppStorage(TVConfig.Keys.guideVersion) private var guideVersion = 0
-    @AppStorage(TVConfig.Keys.volumeHintCount) private var volumeHintCount = 0
     @AppStorage(TVConfig.Keys.volumeGestureUsed) private var volumeGestureUsed = false
     @State private var showKeypad = false
     /// Cambia con cada pulsación para disparar la vibración.
@@ -73,6 +72,8 @@ struct RemoteView: View {
         }
         .sheet(isPresented: $showGuide) {
             guideVersion = TVConfig.guideVersion
+            // Al cerrar la guía toca el recordatorio: antes quedaba tapado por ella.
+            remindVolumeGesture()
         } content: {
             GuideView(onSearch: {
                 searchOnOpenSettings = true
@@ -88,16 +89,17 @@ struct RemoteView: View {
         .onAppear {
             client.connect(host: ip)
             // La guía sale la primera vez, cuando trae novedades y mientras no haya TV.
-            if guideVersion < TVConfig.guideVersion || !hasTV { showGuide = true }
-        }
-        .onChange(of: isConnected) {
-            guard isConnected, !showGuide else { return }
-            remindVolumeGesture()
+            if guideVersion < TVConfig.guideVersion || !hasTV {
+                showGuide = true
+            } else {
+                remindVolumeGesture()
+            }
         }
         .onChange(of: scenePhase) {
             switch scenePhase {
             case .active:
                 if client.state == .disconnected { client.connect(host: ip) }
+                remindVolumeGesture()
             case .background:
                 client.disconnect()
             default:
@@ -241,10 +243,10 @@ struct RemoteView: View {
         }
     }
 
-    /// Recordatorio del gesto: dos veces como mucho, y nunca si ya se usó.
+    /// Recordatorio del gesto: cada vez que se abre la app, hasta que el usuario lo use.
+    /// A partir de ahí no vuelve a salir: ya sabe hacerlo.
     private func remindVolumeGesture() {
-        guard !volumeGestureUsed, volumeHintCount < 2 else { return }
-        volumeHintCount += 1
+        guard hasTV, !volumeGestureUsed, !showGuide else { return }
         show(.hint)
     }
 
