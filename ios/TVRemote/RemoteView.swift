@@ -67,6 +67,8 @@ struct RemoteView: View {
         .sheet(isPresented: $showSettings) {
             searchOnOpenSettings = false
             client.connect(host: ip)
+            // Si acaba de configurar el TV, este es el primer momento en que hay panel.
+            remindVolumeGesture()
         } content: {
             SettingsView(searchOnOpen: searchOnOpenSettings)
         }
