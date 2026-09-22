@@ -1,16 +1,22 @@
 import SwiftUI
 
 /// Zona táctil única que sustituye a la cruceta: se desliza para navegar y se toca
-/// para seleccionar, como el trackpad del mando del Apple TV.
+/// para seleccionar, como el trackpad del mando del Apple TV. Con dos dedos, el mismo
+/// panel sube y baja el volumen del televisor.
 ///
-/// No conoce al cliente del TV: avisa por `direction` y `select`, así que el resto
-/// de la app sigue recibiendo las mismas teclas KEY_UP/DOWN/LEFT/RIGHT/ENTER.
+/// No conoce al cliente del TV: avisa por `direction`, `select`, `volume` y `mute`,
+/// así que el resto de la app sigue recibiendo las mismas teclas.
 struct TouchPad: View {
     let direction: (RemoteKey) -> Void
     let select: () -> Void
+    /// true para subir el volumen, false para bajarlo.
+    let volume: (Bool) -> Void
+    let mute: () -> Void
 
     @Environment(\.isEnabled) private var isEnabled
     @State private var tracker = SwipeTracker()
+    /// Un acumulador aparte para el volumen: su recorrido no debe mezclarse con el del foco.
+    @State private var volumeTracker = SwipeTracker(step: 24)
     /// Cambian con cada tecla para disparar la vibración.
     @State private var directionCount = 0
     @State private var selectCount = 0
@@ -19,8 +25,7 @@ struct TouchPad: View {
         VStack(spacing: 12) {
             GeometryReader { geometry in
                 surface
-                    .contentShape(RoundedRectangle(cornerRadius: 32, style: .continuous))
-                    .gesture(drag(in: geometry.size))
+                    .overlay(gestures(in: geometry.size))
             }
             // Se queda con todo el espacio que le deje el resto del mando, y en pantallas
             // pequeñas encoge hasta este mínimo en vez de empujar los botones fuera.
@@ -36,9 +41,8 @@ struct TouchPad: View {
         .accessibilityElement()
         .accessibilityLabel("Touch area")
         .accessibilityHint("Swipe up or down to move, use the actions for the rest, and double tap to select")
-        // VoiceOver se queda con el gesto de deslizar, así que las teclas van aparte:
-        // arriba y abajo como ajuste, y las cinco como acciones, para que el rotor
-        // baste por sí solo sin tener que cambiar de modo.
+        // VoiceOver se queda con los gestos, así que las teclas van aparte: arriba y abajo
+        // como ajuste, y todas como acciones, para que el rotor baste por sí solo.
         .accessibilityAdjustableAction { adjustment in
             switch adjustment {
             case .increment: fire(.up)
@@ -51,6 +55,9 @@ struct TouchPad: View {
         .accessibilityAction(named: "Left") { fire(.left) }
         .accessibilityAction(named: "Right") { fire(.right) }
         .accessibilityAction(named: "Select") { fire(.ok) }
+        .accessibilityAction(named: "Raise volume") { volume(true) }
+        .accessibilityAction(named: "Lower volume") { volume(false) }
+        .accessibilityAction(named: "Mute") { mute() }
         .accessibilityAction { fire(.ok) }
     }
 
@@ -65,24 +72,39 @@ struct TouchPad: View {
         }
     }
 
-    // MARK: - Gesto
+    // MARK: - Gestos
 
-    private func drag(in size: CGSize) -> some Gesture {
-        // minimumDistance 0: el toque también entra por aquí, así no hay dos gestos compitiendo.
-        DragGesture(minimumDistance: 0)
-            .onChanged { value in
-                let key = tracker.moved(
-                    translation: value.translation,
-                    from: value.startLocation,
-                    location: value.location,
-                    in: size,
-                    at: value.time
-                )
+    private func gestures(in size: CGSize) -> some View {
+        PadGestures(
+            isEnabled: isEnabled,
+            move: { translation, location, time in
+                let key = tracker.moved(translation: translation, from: .zero, location: location, in: size, at: time)
                 if let key { fire(key) }
-            }
-            .onEnded { _ in
+            },
+            moveEnded: {
+                // Un arrastre corto que no llegó a mover el foco cuenta como toque.
                 if let key = tracker.ended() { fire(key) }
+            },
+            volume: { translation, location, time in
+                let key = volumeTracker.moved(translation: translation, from: .zero, location: location, in: size, at: time)
+                guard let key else { return }
+                directionCount += 1
+                volume(key == .up)
+            },
+            volumeEnded: {
+                // Aquí no hay "toque": un arrastre con dos dedos sin pasos no hace nada.
+                _ = volumeTracker.ended()
+            },
+            select: {
+                selectCount += 1
+                select()
+            },
+            mute: {
+                selectCount += 1
+                mute()
             }
+        )
+        .contentShape(RoundedRectangle(cornerRadius: 32, style: .continuous))
     }
 
     private func fire(_ key: RemoteKey) {
@@ -97,7 +119,8 @@ struct TouchPad: View {
 }
 
 #Preview {
-    TouchPad(direction: { print($0.rawValue) }, select: { print("OK") })
+    TouchPad(direction: { print($0.rawValue) }, select: { print("OK") },
+             volume: { print($0 ? "vol +" : "vol -") }, mute: { print("mute") })
         .padding(32)
         .background(Color.black)
         .preferredColorScheme(.dark)

@@ -29,7 +29,7 @@ struct HelpView: View {
                 help("hand.point.up.left", "The big panel",
                      "Swipe to move the focus through the TV menu and tap anywhere to select. The longer the swipe, the further it moves.")
                 help("speaker.wave.2", "Volume",
-                     "Use the iPhone's own volume buttons while the app is open. They are in Options too.")
+                     "Swipe up or down on the panel with two fingers. A two-finger tap mutes. The volume is also in Options, with buttons.")
                 help("power", "Turning the TV on and off",
                      "The red button. Just after switching off the TV answers at once; after a while the app wakes it over the network and it takes a few seconds.")
                 help("circle.grid.3x3", "Options",

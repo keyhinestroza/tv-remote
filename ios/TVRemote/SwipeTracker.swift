@@ -22,6 +22,11 @@ struct SwipeTracker {
     private var lastKey: CGSize = .zero
     /// Dónde empezó el gesto que se está midiendo; sirve para reconocer uno nuevo.
     private var start: CGPoint?
+
+    init(step: CGFloat = 28, minInterval: TimeInterval = 0.15) {
+        self.step = step
+        self.minInterval = minInterval
+    }
     /// Cuándo se disparó la última tecla, para no ir más rápido que el TV.
     private var lastKeyTime: Date?
 

@@ -109,9 +109,20 @@ struct GuidePage {
             summary: "El panel grande hace de touchpad, como el mando del Apple TV.",
             points: [
                 ("hand.point.up.left", "Swipe and tap", "Swipe to move the focus through the TV menu and tap to select."),
-                ("speaker.wave.2", "The iPhone's volume", "The iPhone's volume buttons raise and lower the TV's volume."),
+                ("arrow.up.and.down", "Volume", "Two fingers on the panel, up or down. The next screen explains it."),
                 ("power", "Red button", "Turns the TV on and off. Just switched off it answers at once; after a while it takes a few seconds."),
                 ("circle.grid.3x3", "Options", "Channel numbers, mute, channels and the input source."),
+            ]
+        ),
+        GuidePage(
+            symbol: "hand.draw",
+            title: "Volume with two fingers",
+            summary: "The panel does two jobs at once, and the number of fingers decides which.",
+            points: [
+                ("hand.point.up.left", "One finger", "Moves the focus through the menu and selects, as always."),
+                ("arrow.up.and.down", "Two fingers up or down", "Raise and lower the TV volume. A mark appears on the left with each step."),
+                ("speaker.slash", "Two-finger tap", "Mutes and unmutes."),
+                ("circle.grid.3x3", "Also in Options", "If you would rather press a button, the volume is there too."),
             ]
         ),
         GuidePage(

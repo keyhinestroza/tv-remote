@@ -16,11 +16,12 @@
 		5C289E6421A10ECF6FA86EAD /* SwipeTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2516999D05D92EC9A2897B /* SwipeTracker.swift */; };
 		6D5BFB9CD29DCE2D017A15DB /* WakeOnLAN.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED19F5C5CC7B8F6CD93380F3 /* WakeOnLAN.swift */; };
 		7C0B16A58732E45AA992486C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7710BFB4F02645288E5B22EE /* Assets.xcassets */; };
+		971D9CA5E3237158CABB191C /* TVMute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 002DBB2069C08B7A22EB2291 /* TVMute.swift */; };
 		A148B5CD53F712F16477EB45 /* HelpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E7B4EDC66D5927531E39D78 /* HelpView.swift */; };
-		A89A8EEFA3A6BDE1EDB9B93B /* VolumeButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E6996BE3ECFE60032881D83 /* VolumeButtons.swift */; };
 		AA37CA560185EE684FB88661 /* GuideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5CA9268161008ABCEDF5AB /* GuideView.swift */; };
 		AA4DA369DFA515109EB00330 /* TVRemoteClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892E559F9D3FE25A531A0C3F /* TVRemoteClient.swift */; };
 		ACA13D6667E760047341E65C /* KeychainStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D7DE34D9C29CD874EFE58E3 /* KeychainStore.swift */; };
+		AF616DB965BB10F086BCB055 /* PadGestures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20CCE64792937965B2DFD0FF /* PadGestures.swift */; };
 		B184FDE3200BEC03F95B7BBE /* RemoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F35B480751C62CB57DAA050 /* RemoteView.swift */; };
 		C36EFCD4890E281975BB330C /* VolumeHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = B221D5359BE22F5740852CE5 /* VolumeHUD.swift */; };
 		C4DA0094E809E1E4C1CEB6C3 /* RemoteKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B1C6737788E225D704D35A8 /* RemoteKey.swift */; };
@@ -31,13 +32,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		002DBB2069C08B7A22EB2291 /* TVMute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVMute.swift; sourceTree = "<group>"; };
 		0890DDB3BF0C402C17AD83B1 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		12C4D14F2E2715A33C744E96 /* InfoPlist.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = InfoPlist.xcstrings; sourceTree = "<group>"; };
+		20CCE64792937965B2DFD0FF /* PadGestures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PadGestures.swift; sourceTree = "<group>"; };
 		2D7DE34D9C29CD874EFE58E3 /* KeychainStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainStore.swift; sourceTree = "<group>"; };
 		4A925A32C00EA5E0EA005803 /* TVRemote.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = TVRemote.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B1C6737788E225D704D35A8 /* RemoteKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteKey.swift; sourceTree = "<group>"; };
 		4D8FF169D9DE3AA4B36FCA0A /* TVDiscovery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVDiscovery.swift; sourceTree = "<group>"; };
-		4E6996BE3ECFE60032881D83 /* VolumeButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolumeButtons.swift; sourceTree = "<group>"; };
 		4E7B4EDC66D5927531E39D78 /* HelpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpView.swift; sourceTree = "<group>"; };
 		541A4BB45AB2BAFA44C25F22 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		56E0A9BFB7367858DD0AB3E5 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
@@ -69,6 +71,7 @@
 				2D7DE34D9C29CD874EFE58E3 /* KeychainStore.swift */,
 				0890DDB3BF0C402C17AD83B1 /* Localizable.xcstrings */,
 				7D3842885EF2253BD6F25113 /* LocalNetwork.swift */,
+				20CCE64792937965B2DFD0FF /* PadGestures.swift */,
 				56E0A9BFB7367858DD0AB3E5 /* PrivacyInfo.xcprivacy */,
 				4B1C6737788E225D704D35A8 /* RemoteKey.swift */,
 				5F35B480751C62CB57DAA050 /* RemoteView.swift */,
@@ -77,9 +80,9 @@
 				84F09A7D1F8A4249AE1AE9BC /* TouchPad.swift */,
 				576246825E66AFFCB7007C80 /* TVConfig.swift */,
 				4D8FF169D9DE3AA4B36FCA0A /* TVDiscovery.swift */,
+				002DBB2069C08B7A22EB2291 /* TVMute.swift */,
 				94A46E339FC62F654E112631 /* TVRemoteApp.swift */,
 				892E559F9D3FE25A531A0C3F /* TVRemoteClient.swift */,
-				4E6996BE3ECFE60032881D83 /* VolumeButtons.swift */,
 				B221D5359BE22F5740852CE5 /* VolumeHUD.swift */,
 				ED19F5C5CC7B8F6CD93380F3 /* WakeOnLAN.swift */,
 			);
@@ -182,16 +185,17 @@
 				A148B5CD53F712F16477EB45 /* HelpView.swift in Sources */,
 				ACA13D6667E760047341E65C /* KeychainStore.swift in Sources */,
 				F9FF99175B9DF83D0E53B35D /* LocalNetwork.swift in Sources */,
+				AF616DB965BB10F086BCB055 /* PadGestures.swift in Sources */,
 				C4DA0094E809E1E4C1CEB6C3 /* RemoteKey.swift in Sources */,
 				B184FDE3200BEC03F95B7BBE /* RemoteView.swift in Sources */,
 				50E293F98ADBAE2BA2EDEBB9 /* SettingsView.swift in Sources */,
 				5C289E6421A10ECF6FA86EAD /* SwipeTracker.swift in Sources */,
 				D512399E52F226F5FE3C1611 /* TVConfig.swift in Sources */,
 				4F05D6EE5EF8C575A58B9B71 /* TVDiscovery.swift in Sources */,
+				971D9CA5E3237158CABB191C /* TVMute.swift in Sources */,
 				4F6F27EB18FD9B0FF713D7AB /* TVRemoteApp.swift in Sources */,
 				AA4DA369DFA515109EB00330 /* TVRemoteClient.swift in Sources */,
 				1106C729430CEBB2C0DAA21E /* TouchPad.swift in Sources */,
-				A89A8EEFA3A6BDE1EDB9B93B /* VolumeButtons.swift in Sources */,
 				C36EFCD4890E281975BB330C /* VolumeHUD.swift in Sources */,
 				6D5BFB9CD29DCE2D017A15DB /* WakeOnLAN.swift in Sources */,
 			);

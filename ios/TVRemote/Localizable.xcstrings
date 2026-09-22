@@ -1,1456 +1,1597 @@
 {
-  "sourceLanguage" : "en",
-  "strings" : {
-    "%@" : {
-
+  "sourceLanguage": "en",
+  "strings": {
+    "%@": {},
+    "About": {
+      "extractionState": "manual",
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Acerca de"
+          }
+        }
+      }
+    },
+    "Accept it on the TV": {
+      "extractionState": "manual",
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Acepta en el televisor"
+          }
+        }
+      }
+    },
+    "Address": {
+      "extractionState": "manual",
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dirección"
+          }
+        }
+      }
+    },
+    "After a few minutes the TV sleeps completely and only wakes with that setting on.": {
+      "extractionState": "manual",
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pasados unos minutos el TV se duerme del todo y solo despierta con esa opción activada."
+          }
+        }
+      }
+    },
+    "Allow the local network": {
+      "extractionState": "manual",
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Permite la red local"
+          }
+        }
+      }
+    },
+    "Also in Options": {
+      "extractionState": "manual",
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "También en Opciones"
+          }
+        }
+      }
+    },
+    "Authorisation cleared. The TV will ask again on the next connection.": {
+      "extractionState": "manual",
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Token borrado. El TV pedirá permiso en la próxima conexión."
+          }
+        }
+      }
+    },
+    "Back": {
+      "extractionState": "manual",
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Atrás"
+          }
+        }
+      }
+    },
+    "Before you start": {
+      "extractionState": "manual",
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Antes de empezar"
+          }
+        }
+      }
+    },
+    "CH +": {
+      "extractionState": "manual",
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "CH +"
+          }
+        }
+      }
+    },
+    "CH −": {
+      "extractionState": "manual",
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "CH −"
+          }
+        }
+      }
     },
-    "About" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Acerca de"
+    "Channel numbers, mute, channel up and down, and the input source.": {
+      "extractionState": "manual",
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Números para los canales, silencio, canal arriba y abajo, y la fuente de entrada."
           }
         }
       }
     },
-    "Accept it on the TV" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Acepta en el televisor"
+    "Channel numbers, mute, channels and the input source.": {
+      "extractionState": "manual",
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Números, silencio, canales y la fuente de entrada."
           }
         }
       }
     },
-    "Address" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Dirección"
+    "Checking the network (%lld addresses)…": {
+      "extractionState": "manual",
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Revisando la red (%lld direcciones)…"
           }
         }
       }
     },
-    "After a few minutes the TV sleeps completely and only wakes with that setting on." : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Pasados unos minutos el TV se duerme del todo y solo despierta con esa opción activada."
+    "Clears the authorisation saved in the iPhone's Keychain for this TV.": {
+      "extractionState": "manual",
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Borra el token guardado en el Keychain para este TV."
           }
         }
       }
     },
-    "Allow the local network" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Permite la red local"
+    "Close": {
+      "extractionState": "manual",
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cerrar"
           }
         }
       }
     },
-    "Authorisation cleared. The TV will ask again on the next connection." : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Token borrado. El TV pedirá permiso en la próxima conexión."
+    "Connected": {
+      "extractionState": "manual",
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Conectado"
           }
         }
       }
     },
-    "Back" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Atrás"
+    "Connecting…": {
+      "extractionState": "manual",
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Conectando…"
           }
         }
       }
     },
-    "Before you start" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Antes de empezar"
+    "Connection closed": {
+      "extractionState": "manual",
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Conexión cerrada"
           }
         }
       }
     },
-    "CH +" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "CH +"
+    "Connection: %@": {
+      "extractionState": "manual",
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Conexión: %@"
           }
         }
       }
     },
-    "CH −" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "CH −"
+    "Control your smart TV over your home network. No internet and no original remote needed.": {
+      "extractionState": "manual",
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Maneja tu smart TV por la red de tu casa. No hace falta internet ni el mando original."
           }
         }
       }
     },
-    "Channel numbers, mute, channel up and down, and the input source." : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Números para los canales, silencio, canal arriba y abajo, y la fuente de entrada."
+    "Could not connect to the TV": {
+      "extractionState": "manual",
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No se pudo conectar con el TV"
           }
         }
       }
     },
-    "Channel numbers, mute, channels and the input source." : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Números, silencio, canales y la fuente de entrada."
+    "Could not find the TV on the network": {
+      "extractionState": "manual",
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No se encontró el TV en la red"
           }
         }
       }
     },
-    "Checking the network (%lld addresses)…" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Revisando la red (%lld direcciones)…"
+    "Could not read the iPhone's network": {
+      "extractionState": "manual",
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No se pudo leer la red del iPhone"
           }
         }
       }
     },
-    "Clears the authorisation saved in the iPhone's Keychain for this TV." : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Borra el token guardado en el Keychain para este TV."
+    "Could not save the authorisation to the Keychain": {
+      "extractionState": "manual",
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No se pudo guardar el token en el Keychain"
           }
         }
       }
     },
-    "Close" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Cerrar"
+    "Disconnected": {
+      "extractionState": "manual",
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Desconectado"
           }
         }
       }
     },
-    "Connected" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Conectado"
+    "Done": {
+      "extractionState": "manual",
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Listo"
           }
         }
       }
     },
-    "Connecting…" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Conectando…"
+    "Double tap to reconnect": {
+      "extractionState": "manual",
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Toca dos veces para reconectar"
           }
         }
       }
     },
-    "Connection closed" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Conexión cerrada"
+    "Down": {
+      "extractionState": "manual",
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Abajo"
           }
         }
       }
+    },
+    "English": {
+      "extractionState": "manual"
     },
-    "Connection: %@" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Conexión: %@"
+    "Enter your TV's address to get started.": {
+      "extractionState": "manual",
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Indica la IP de tu TV para empezar."
           }
         }
       }
     },
-    "Control your smart TV over your home network. No internet and no original remote needed." : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Maneja tu smart TV por la red de tu casa. No hace falta internet ni el mando original."
+    "Español": {
+      "extractionState": "manual"
+    },
+    "Everything happens inside your network: the app talks to the TV directly and sends nothing to the internet. The TV's authorisation is kept in the iPhone's Keychain.": {
+      "extractionState": "manual",
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Todo ocurre dentro de tu red: la app le habla al TV directamente y no envía nada a internet. La autorización del TV se guarda en el Keychain del iPhone."
           }
         }
       }
     },
-    "Could not connect to the TV" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "No se pudo conectar con el TV"
+    "Find my TV": {
+      "extractionState": "manual",
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Buscar mi TV"
           }
         }
       }
     },
-    "Could not find the TV on the network" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "No se encontró el TV en la red"
+    "Forget authorisation": {
+      "extractionState": "manual",
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Olvidar autorización"
           }
         }
       }
     },
-    "Could not read the iPhone's network" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "No se pudo leer la red del iPhone"
+    "Four things so the TV shows up first time.": {
+      "extractionState": "manual",
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cuatro cosas para que el TV aparezca a la primera."
           }
         }
       }
     },
-    "Could not save the authorisation to the Keychain" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "No se pudo guardar el token en el Keychain"
+    "Fully switched off it does not answer, and the app cannot find it.": {
+      "extractionState": "manual",
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apagado del todo no responde, y la app no puede encontrarlo."
           }
         }
       }
     },
-    "Disconnected" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Desconectado"
+    "Green: connected. Orange: connecting, or the TV is asleep. Red: no connection. Tap it to retry.": {
+      "extractionState": "manual",
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Verde: conectado. Naranja: conectando o el TV en reposo. Rojo: sin conexión. Tócalo para reintentar."
           }
         }
       }
     },
-    "Done" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Listo"
+    "Help": {
+      "extractionState": "manual",
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ayuda"
           }
         }
       }
     },
-    "Double tap to reconnect" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Toca dos veces para reconectar"
+    "Help and setup guide": {
+      "extractionState": "manual",
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ayuda y guía de inicio"
           }
         }
       }
     },
-    "Down" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Abajo"
+    "Home": {
+      "extractionState": "manual",
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Inicio"
           }
         }
       }
     },
-    "English" : {
-      "extractionState" : "manual"
+    "How it works": {
+      "extractionState": "manual",
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cómo se usa"
+          }
+        }
+      }
     },
-    "Enter your TV's address to get started." : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Indica la IP de tu TV para empezar."
+    "I'll do it later": {
+      "extractionState": "manual",
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lo haré después"
           }
         }
       }
     },
-    "Español" : {
-      "extractionState" : "manual"
+    "If something goes wrong": {
+      "extractionState": "manual",
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Si algo no funciona"
+          }
+        }
+      }
     },
-    "Everything happens inside your network: the app talks to the TV directly and sends nothing to the internet. The TV's authorisation is kept in the iPhone's Keychain." : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Todo ocurre dentro de tu red: la app le habla al TV directamente y no envía nada a internet. La autorización del TV se guarda en el Keychain del iPhone."
+    "If you would rather press a button, the volume is there too.": {
+      "extractionState": "manual",
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Si prefieres pulsar un botón, el volumen también está ahí."
           }
         }
       }
     },
-    "Find my TV" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Buscar mi TV"
+    "Invalid address": {
+      "extractionState": "manual",
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "IP no válida"
           }
         }
       }
     },
-    "Forget authorisation" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Olvidar autorización"
+    "It all stays on your network": {
+      "extractionState": "manual",
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Todo pasa en tu red"
           }
         }
       }
     },
-    "Four things so the TV shows up first time." : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Cuatro cosas para que el TV aparezca a la primera."
+    "It says “Disconnected”": {
+      "extractionState": "manual",
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dice «Desconectado»"
           }
         }
       }
     },
-    "Fully switched off it does not answer, and the app cannot find it." : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Apagado del todo no responde, y la app no puede encontrarlo."
+    "It will not turn the TV on": {
+      "extractionState": "manual",
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No enciende el TV"
           }
         }
       }
     },
-    "Green: connected. Orange: connecting, or the TV is asleep. Red: no connection. Tap it to retry." : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Verde: conectado. Naranja: conectando o el TV en reposo. Rojo: sin conexión. Tócalo para reintentar."
+    "Language": {
+      "extractionState": "manual",
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Idioma"
           }
         }
       }
     },
-    "Help" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Ayuda"
+    "Left": {
+      "extractionState": "manual",
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Izquierda"
           }
         }
       }
     },
-    "Help and setup guide" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Ayuda y guía de inicio"
+    "Lost the connection to the TV": {
+      "extractionState": "manual",
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Se perdió la conexión con el TV"
           }
         }
       }
     },
-    "Home" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Inicio"
+    "Lower volume": {
+      "extractionState": "manual",
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bajar volumen"
           }
         }
       }
     },
-    "How it works" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Cómo se usa"
+    "Model": {
+      "extractionState": "manual",
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Modelo"
           }
         }
       }
     },
-    "I'll do it later" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Lo haré después"
+    "Moves the focus through the menu and selects, as always.": {
+      "extractionState": "manual",
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mueve el foco por el menú y selecciona, como siempre."
           }
         }
       }
     },
-    "If something goes wrong" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Si algo no funciona"
+    "Mute": {
+      "extractionState": "manual",
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Silencio"
           }
         }
       }
     },
-    "Invalid address" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "IP no válida"
+    "Muted": {
+      "extractionState": "manual",
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Silenciado"
           }
         }
       }
     },
-    "iOS asks the first time. Without that permission the app cannot see the TV." : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "iOS lo pide la primera vez. Sin ese permiso la app no ve el TV."
+    "Mutes and unmutes.": {
+      "extractionState": "manual",
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Silencia y quita el silencio."
           }
         }
       }
     },
-    "It all stays on your network" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Todo pasa en tu red"
+    "Name": {
+      "extractionState": "manual",
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nombre"
           }
         }
       }
     },
-    "It says “Disconnected”" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Dice «Desconectado»"
+    "Next": {
+      "extractionState": "manual",
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Siguiente"
           }
         }
       }
     },
-    "It will not turn the TV on" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "No enciende el TV"
+    "No Bluetooth pairing": {
+      "extractionState": "manual",
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sin emparejar por Bluetooth"
           }
         }
       }
     },
-    "Language" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Idioma"
+    "No TV set up": {
+      "extractionState": "manual",
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sin TV configurado"
           }
         }
       }
     },
-    "Left" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Izquierda"
+    "Nobody accepted the prompt on the TV": {
+      "extractionState": "manual",
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nadie aceptó la autorización en el TV"
           }
         }
       }
     },
-    "Lost the connection to the TV" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Se perdió la conexión con el TV"
+    "Number pad": {
+      "extractionState": "manual",
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Teclado numérico"
           }
         }
       }
     },
-    "Lower volume" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Bajar volumen"
+    "On the TV": {
+      "extractionState": "manual",
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "En el TV"
           }
         }
       }
     },
-    "Model" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Modelo"
+    "One finger": {
+      "extractionState": "manual",
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Un dedo"
           }
         }
       }
     },
-    "Mute" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Silencio"
+    "One setting worth changing": {
+      "extractionState": "manual",
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Un ajuste que vale la pena"
           }
         }
       }
     },
-    "Name" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Nombre"
+    "Options": {
+      "extractionState": "manual",
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Opciones"
           }
         }
       }
     },
-    "Next" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Siguiente"
+    "Power": {
+      "extractionState": "manual",
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Encendido"
           }
         }
       }
     },
-    "No Bluetooth pairing" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Sin emparejar por Bluetooth"
+    "Raise and lower the TV volume. A mark appears on the left with each step.": {
+      "extractionState": "manual",
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Suben y bajan el volumen del televisor. En cada paso aparece una señal a la izquierda."
           }
         }
       }
     },
-    "No TV set up" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Sin TV configurado"
+    "Raise volume": {
+      "extractionState": "manual",
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Subir volumen"
           }
         }
       }
     },
-    "Nobody accepted the prompt on the TV" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Nadie aceptó la autorización en el TV"
+    "Red button": {
+      "extractionState": "manual",
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Botón rojo"
           }
         }
       }
     },
-    "not set" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "sin configurar"
+    "Right": {
+      "extractionState": "manual",
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Derecha"
           }
         }
       }
     },
-    "Number pad" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Teclado numérico"
+    "Search again": {
+      "extractionState": "manual",
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Buscar otra vez"
           }
         }
       }
     },
-    "On the TV" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "En el TV"
+    "Search for your TV and the app fills in the address by itself; nothing to copy.": {
+      "extractionState": "manual",
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Busca tu TV y la app rellena sola la dirección; no tienes que copiar nada."
           }
         }
       }
     },
-    "One setting worth changing" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Un ajuste que vale la pena"
+    "Search the network": {
+      "extractionState": "manual",
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Buscar en la red"
           }
         }
       }
     },
-    "Options" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Opciones"
+    "Searching with Bonjour…": {
+      "extractionState": "manual",
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Buscando por Bonjour…"
           }
         }
       }
     },
-    "Power" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Encendido"
+    "See the setup guide": {
+      "extractionState": "manual",
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ver la guía de inicio"
           }
         }
       }
     },
-    "Raise volume" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Subir volumen"
+    "Select": {
+      "extractionState": "manual",
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Seleccionar"
           }
         }
       }
     },
-    "Red button" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Botón rojo"
+    "Settings": {
+      "extractionState": "manual",
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ajustes"
           }
         }
       }
     },
-    "Right" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Derecha"
+    "Settings › General › Network › Expert Settings › Power On with Mobile.": {
+      "extractionState": "manual",
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Configuración › General › Red › Configuración experta › Encender con móvil."
           }
         }
       }
     },
-    "Search again" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Buscar otra vez"
+    "Smart TV": {
+      "extractionState": "manual",
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Smart TV"
           }
         }
       }
     },
-    "Search for your TV and the app fills in the address by itself; nothing to copy." : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Busca tu TV y la app rellena sola la dirección; no tienes que copiar nada."
+    "Sound on": {
+      "extractionState": "manual",
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Con sonido"
           }
         }
       }
     },
-    "Search the network" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Buscar en la red"
+    "Source": {
+      "extractionState": "manual",
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fuente"
           }
         }
       }
     },
-    "Searching with Bonjour…" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Buscando por Bonjour…"
+    "Swipe and tap": {
+      "extractionState": "manual",
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Desliza y toca"
           }
         }
       }
     },
-    "See the setup guide" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Ver la guía de inicio"
+    "Swipe to move the focus through the TV menu and tap anywhere to select. The longer the swipe, the further it moves.": {
+      "extractionState": "manual",
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Desliza para mover el foco por el menú del TV y toca en cualquier punto para seleccionar. Cuanto más largo el deslizamiento, más posiciones avanza."
           }
         }
       }
     },
-    "Select" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Seleccionar"
+    "Swipe to move the focus through the TV menu and tap to select.": {
+      "extractionState": "manual",
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Desliza para mover el foco por el menú del TV y toca para seleccionar."
           }
         }
       }
     },
-    "Settings" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Ajustes"
+    "Swipe to move · tap to select": {
+      "extractionState": "manual",
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Desliza para moverte · toca para seleccionar"
           }
         }
       }
     },
-    "Settings › General › Network › Expert Settings › Power On with Mobile." : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Configuración › General › Red › Configuración experta › Encender con móvil."
+    "Swipe up or down on the panel with two fingers. A two-finger tap mutes. The volume is also in Options, with buttons.": {
+      "extractionState": "manual",
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Desliza arriba o abajo en el panel con dos dedos. Un toque con dos dedos silencia. El volumen también está en Opciones, con botones."
           }
         }
       }
     },
-    "Smart TV" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Smart TV"
+    "Swipe up or down to move, use the actions for the rest, and double tap to select": {
+      "extractionState": "manual",
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Desliza arriba o abajo para moverte, usa las acciones para el resto y toca dos veces para seleccionar"
           }
         }
       }
     },
-    "Source" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Fuente"
+    "Swipe up or down with two fingers": {
+      "extractionState": "manual",
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Desliza arriba o abajo con dos dedos"
           }
         }
       }
     },
-    "Swipe and tap" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Desliza y toca"
+    "System language": {
+      "extractionState": "manual",
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Idioma del sistema"
           }
         }
       }
     },
-    "Swipe to move · tap to select" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Desliza para moverte · toca para seleccionar"
+    "TV asleep": {
+      "extractionState": "manual",
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "TV en reposo"
           }
         }
       }
     },
-    "Swipe to move the focus through the TV menu and tap anywhere to select. The longer the swipe, the further it moves." : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Desliza para mover el foco por el menú del TV y toca en cualquier punto para seleccionar. Cuanto más largo el deslizamiento, más posiciones avanza."
+    "TV not found. Is it on?": {
+      "extractionState": "manual",
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No se encontró el TV. ¿Está encendido?"
           }
         }
       }
     },
-    "Swipe to move the focus through the TV menu and tap to select." : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Desliza para mover el foco por el menú del TV y toca para seleccionar."
+    "Tap the status to retry. If the TV changed address, the app finds it again by its MAC and switches over. If it stays that way, search for the TV again in Settings.": {
+      "extractionState": "manual",
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Toca el estado para reintentar. Si el TV cambió de dirección, la app lo busca sola por su MAC y se cambia a la nueva. Si sigue igual, busca el TV otra vez en Ajustes."
           }
         }
       }
     },
-    "Swipe up or down to move, use the actions for the rest, and double tap to select" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Desliza arriba o abajo para moverte, usa las acciones para el resto y toca dos veces para seleccionar"
+    "Tap your TV to use it.": {
+      "extractionState": "manual",
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Toca tu TV para usarlo."
           }
         }
       }
     },
-    "System language" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Idioma del sistema"
+    "Television": {
+      "extractionState": "manual",
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Televisor"
           }
         }
       }
     },
-    "Tap the status to retry. If the TV changed address, the app finds it again by its MAC and switches over. If it stays that way, search for the TV again in Settings." : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Toca el estado para reintentar. Si el TV cambió de dirección, la app lo busca sola por su MAC y se cambia a la nueva. Si sigue igual, busca el TV otra vez en Ajustes."
+    "That means the authorisation could not be saved. Accept the prompt on the TV with its own remote; if it keeps happening, use “Forget authorisation” in Settings and connect again.": {
+      "extractionState": "manual",
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Significa que no se pudo guardar la autorización. Acepta el aviso en la pantalla del TV con su mando; si se repite, usa «Olvidar autorización» en Ajustes y vuelve a conectar."
           }
         }
       }
     },
-    "Tap your TV to use it." : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Toca tu TV para usarlo."
+    "That's it": {
+      "extractionState": "manual",
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ya está"
           }
         }
       }
     },
-    "Television" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Televisor"
+    "The MAC is only used to turn the TV on over the network.": {
+      "extractionState": "manual",
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La MAC solo se usa para encender el TV por Wake-on-LAN."
           }
         }
       }
     },
-    "That means the authorisation could not be saved. Accept the prompt on the TV with its own remote; if it keeps happening, use “Forget authorisation” in Settings and connect again." : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Significa que no se pudo guardar la autorización. Acepta el aviso en la pantalla del TV con su mando; si se repite, usa «Olvidar autorización» en Ajustes y vuelve a conectar."
+    "The MAC needs 12 hexadecimal digits.": {
+      "extractionState": "manual",
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La MAC debe tener 12 dígitos hexadecimales."
           }
         }
       }
     },
-    "That's it" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Ya está"
+    "The TV asks for permission every time": {
+      "extractionState": "manual",
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "El TV pide permiso cada vez"
           }
         }
       }
     },
-    "The big panel" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "El panel grande"
+    "The TV closed the connection": {
+      "extractionState": "manual",
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "El TV cerró la conexión"
           }
         }
       }
     },
-    "The coloured dot" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "El punto de color"
+    "The TV did not answer in time": {
+      "extractionState": "manual",
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "El TV no respondió a tiempo"
           }
         }
       }
     },
-    "The first connection asks for permission on the TV screen: accept it with its own remote." : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "La primera conexión pide permiso en la pantalla del TV: acéptalo con su mando."
+    "The TV did not authorise the connection": {
+      "extractionState": "manual",
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "El TV no autorizó la conexión"
           }
         }
       }
     },
-    "The iPhone and the TV on the same Wi-Fi. If your router has a guest network, do not use it." : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "El iPhone y el TV, en el mismo Wi-Fi. Si tu router tiene red de invitados, no la uses."
+    "The TV does not show up": {
+      "extractionState": "manual",
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "El TV no aparece al buscar"
           }
         }
       }
     },
-    "The iPhone talks to the TV directly; nothing goes out to the internet." : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "El iPhone le habla al TV directamente; nada sale a internet."
+    "The TV is off or not responding": {
+      "extractionState": "manual",
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "El TV está apagado o no responde"
           }
         }
       }
     },
-    "The iPhone's volume" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Volumen del iPhone"
+    "The TV is refusing the connection. Is it on?": {
+      "extractionState": "manual",
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "El TV no acepta la conexión. ¿Está encendido?"
           }
         }
       }
     },
-    "The iPhone's volume buttons raise and lower the TV's volume." : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Los botones de volumen del iPhone suben y bajan el del TV."
+    "The TV moved to %@": {
+      "extractionState": "manual",
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "El TV cambió de dirección a %@"
           }
         }
       }
     },
-    "The MAC is only used to turn the TV on over the network." : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "La MAC solo se usa para encender el TV por Wake-on-LAN."
+    "The TV must be on and on the same Wi-Fi as the iPhone. Choosing it fills in the address and the MAC.": {
+      "extractionState": "manual",
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "El TV tiene que estar encendido y en la misma red Wi-Fi que el iPhone. Al elegirlo se rellenan la IP y la MAC."
           }
         }
       }
     },
-    "The MAC needs 12 hexadecimal digits." : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "La MAC debe tener 12 dígitos hexadecimales."
+    "The TV needs this turned on: Settings › General › Network › Expert Settings › Power On with Mobile. And it has to stay plugged in and on the same network.": {
+      "extractionState": "manual",
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hace falta activar en el televisor: Configuración › General › Red › Configuración experta › Encender con móvil. Y que el TV siga enchufado a la corriente y a la misma red."
           }
         }
       }
     },
-    "The red button. Just after switching off the TV answers at once; after a while the app wakes it over the network and it takes a few seconds." : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "El botón rojo. Si el TV lleva pocos segundos apagado responde al instante; si lleva más, la app lo despierta por la red y tarda unos segundos."
+    "The TV refused the connection. Accept the prompt on screen.": {
+      "extractionState": "manual",
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "El TV rechazó la conexión. Acepta el permiso en pantalla."
           }
         }
       }
     },
-    "The same network" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "La misma red"
+    "The TV refused the encrypted connection": {
+      "extractionState": "manual",
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "El TV rechazó el cifrado de la conexión"
           }
         }
       }
     },
-    "The TV asks for permission every time" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "El TV pide permiso cada vez"
+    "The big panel": {
+      "extractionState": "manual",
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "El panel grande"
           }
         }
       }
     },
-    "The TV closed the connection" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "El TV cerró la conexión"
+    "The coloured dot": {
+      "extractionState": "manual",
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "El punto de color"
           }
         }
       }
     },
-    "The TV did not answer in time" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "El TV no respondió a tiempo"
+    "The first connection asks for permission on the TV screen: accept it with its own remote.": {
+      "extractionState": "manual",
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La primera conexión pide permiso en la pantalla del TV: acéptalo con su mando."
           }
         }
       }
     },
-    "The TV did not authorise the connection" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "El TV no autorizó la conexión"
+    "The iPhone and the TV on the same Wi-Fi. If your router has a guest network, do not use it.": {
+      "extractionState": "manual",
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "El iPhone y el TV, en el mismo Wi-Fi. Si tu router tiene red de invitados, no la uses."
           }
         }
       }
     },
-    "The TV does not show up" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "El TV no aparece al buscar"
+    "The iPhone talks to the TV directly; nothing goes out to the internet.": {
+      "extractionState": "manual",
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "El iPhone le habla al TV directamente; nada sale a internet."
           }
         }
       }
     },
-    "The TV is off or not responding" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "El TV está apagado o no responde"
+    "The panel does two jobs at once, and the number of fingers decides which.": {
+      "extractionState": "manual",
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "El panel hace dos cosas a la vez, y el número de dedos decide cuál."
           }
         }
       }
     },
-    "The TV is refusing the connection. Is it on?" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "El TV no acepta la conexión. ¿Está encendido?"
+    "The red button. Just after switching off the TV answers at once; after a while the app wakes it over the network and it takes a few seconds.": {
+      "extractionState": "manual",
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "El botón rojo. Si el TV lleva pocos segundos apagado responde al instante; si lleva más, la app lo despierta por la red y tarda unos segundos."
           }
         }
       }
     },
-    "The TV moved to %@" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "El TV cambió de dirección a %@"
+    "The same network": {
+      "extractionState": "manual",
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La misma red"
           }
         }
       }
     },
-    "The TV must be on and on the same Wi-Fi as the iPhone. Choosing it fills in the address and the MAC." : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "El TV tiene que estar encendido y en la misma red Wi-Fi que el iPhone. Al elegirlo se rellenan la IP y la MAC."
+    "They just need to be on the same network.": {
+      "extractionState": "manual",
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Basta con que los dos estén en la misma red."
           }
         }
       }
     },
-    "The TV needs this turned on: Settings › General › Network › Expert Settings › Power On with Mobile. And it has to stay plugged in and on the same network." : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Hace falta activar en el televisor: Configuración › General › Red › Configuración experta › Encender con móvil. Y que el TV siga enchufado a la corriente y a la misma red."
+    "This iPhone is not on the TV's network": {
+      "extractionState": "manual",
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "El iPhone no está en la red del TV"
           }
         }
       }
     },
-    "The TV refused the connection. Accept the prompt on screen." : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "El TV rechazó la conexión. Acepta el permiso en pantalla."
+    "To turn the TV on after a while switched off, enable this once on the television.": {
+      "extractionState": "manual",
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Para poder encender el TV cuando lleva rato apagado, actívalo una vez en el televisor."
           }
         }
       }
     },
-    "The TV refused the encrypted connection" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "El TV rechazó el cifrado de la conexión"
+    "Touch area": {
+      "extractionState": "manual",
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Área táctil"
           }
         }
       }
     },
-    "They just need to be on the same network." : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Basta con que los dos estén en la misma red."
+    "Turn it on before searching: fully switched off it does not answer. Check that the iPhone is on the same Wi-Fi, not the guest network. If your router splits the bands, use the same one as the TV.": {
+      "extractionState": "manual",
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Enciéndelo antes de buscar: apagado del todo no responde. Comprueba que el iPhone esté en la misma red Wi-Fi, y no en la de invitados. Si tu router separa las bandas, conecta el iPhone a la misma que el TV."
           }
         }
       }
     },
-    "This iPhone is not on the TV's network" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "El iPhone no está en la red del TV"
+    "Turn the TV on": {
+      "extractionState": "manual",
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Enciende el TV"
           }
         }
       }
     },
-    "To turn the TV on after a while switched off, enable this once on the television." : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Para poder encender el TV cuando lleva rato apagado, actívalo una vez en el televisor."
+    "Turning the TV on and off": {
+      "extractionState": "manual",
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Encender y apagar"
           }
         }
       }
     },
-    "Touch area" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Área táctil"
+    "Turns the TV on and off. Just switched off it answers at once; after a while it takes a few seconds.": {
+      "extractionState": "manual",
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Enciende y apaga. Recién apagado responde al instante; si lleva un rato, tarda unos segundos."
           }
         }
       }
     },
-    "Turn it on before searching: fully switched off it does not answer. Check that the iPhone is on the same Wi-Fi, not the guest network. If your router splits the bands, use the same one as the TV." : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Enciéndelo antes de buscar: apagado del todo no responde. Comprueba que el iPhone esté en la misma red Wi-Fi, y no en la de invitados. Si tu router separa las bandas, conecta el iPhone a la misma que el TV."
+    "Two fingers for volume": {
+      "extractionState": "manual",
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dos dedos para el volumen"
           }
         }
       }
     },
-    "Turn the TV on" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Enciende el TV"
+    "Two fingers on the panel, up or down. The next screen explains it.": {
+      "extractionState": "manual",
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dos dedos en el panel, arriba o abajo. La siguiente pantalla lo explica."
           }
         }
       }
     },
-    "Turning the TV on and off" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Encender y apagar"
+    "Two fingers up or down": {
+      "extractionState": "manual",
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dos dedos arriba o abajo"
           }
         }
       }
     },
-    "Turns the TV on and off. Just switched off it answers at once; after a while it takes a few seconds." : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Enciende y apaga. Recién apagado responde al instante; si lleva un rato, tarda unos segundos."
+    "Two-finger tap": {
+      "extractionState": "manual",
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Toque con dos dedos"
           }
         }
       }
     },
-    "TV asleep" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "TV en reposo"
+    "Type the address": {
+      "extractionState": "manual",
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Escribir la IP a mano"
           }
         }
       }
     },
-    "TV not found. Is it on?" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "No se encontró el TV. ¿Está encendido?"
+    "Up": {
+      "extractionState": "manual",
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Arriba"
           }
         }
       }
     },
-    "Type the address" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Escribir la IP a mano"
+    "Version": {
+      "extractionState": "manual",
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Versión"
           }
         }
       }
     },
-    "Up" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Arriba"
+    "Vol +": {
+      "extractionState": "manual",
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vol +"
           }
         }
       }
     },
-    "Use the iPhone's own volume buttons while the app is open. They are in Options too." : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Se controla con los botones físicos del iPhone mientras la app está abierta. También están en Opciones."
+    "Vol −": {
+      "extractionState": "manual",
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vol −"
           }
         }
       }
     },
-    "Version" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Versión"
+    "Volume": {
+      "extractionState": "manual",
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Volumen"
           }
         }
       }
     },
-    "Vol +" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Vol +"
+    "Volume with two fingers": {
+      "extractionState": "manual",
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "El volumen, con dos dedos"
           }
         }
       }
     },
-    "Vol −" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Vol −"
+    "Why": {
+      "extractionState": "manual",
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Por qué"
           }
         }
       }
     },
-    "Volume" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Volumen"
+    "With the system language the app follows the iPhone; any language other than Spanish or English shows in English.": {
+      "extractionState": "manual",
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Con el idioma del sistema la app sigue al iPhone; cualquier idioma que no sea español o inglés se ve en inglés."
           }
         }
       }
     },
-    "Why" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Por qué"
+    "Your remote, on the iPhone": {
+      "extractionState": "manual",
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tu mando, en el iPhone"
           }
         }
       }
     },
-    "With the system language the app follows the iPhone; any language other than Spanish or English shows in English." : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Con el idioma del sistema la app sigue al iPhone; cualquier idioma que no sea español o inglés se ve en inglés."
+    "Your television": {
+      "extractionState": "manual",
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tu televisor"
           }
         }
       }
     },
-    "Your remote, on the iPhone" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Tu mando, en el iPhone"
+    "iOS asks the first time. Without that permission the app cannot see the TV.": {
+      "extractionState": "manual",
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "iOS lo pide la primera vez. Sin ese permiso la app no ve el TV."
           }
         }
       }
     },
-    "Your television" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Tu televisor"
+    "not set": {
+      "extractionState": "manual",
+      "localizations": {
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "sin configurar"
           }
         }
       }
     }
   },
-  "version" : "1.0"
+  "version": "1.0"
 }

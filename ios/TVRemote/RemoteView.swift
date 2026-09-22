@@ -11,16 +11,16 @@ struct RemoteView: View {
     /// true cuando se abre Ajustes para buscar el TV, no para escribir la IP.
     @State private var searchOnOpenSettings = false
     @State private var showGuide = false
-    @AppStorage(TVConfig.Keys.guideSeen) private var guideSeen = false
+    @AppStorage(TVConfig.Keys.guideVersion) private var guideVersion = 0
+    @AppStorage(TVConfig.Keys.volumeHintCount) private var volumeHintCount = 0
+    @AppStorage(TVConfig.Keys.volumeGestureUsed) private var volumeGestureUsed = false
     @State private var showKeypad = false
     /// Cambia con cada pulsación para disparar la vibración.
     @State private var tapCount = 0
-    /// true mientras se ven los signos de volumen.
-    @State private var showVolumeSigns = false
-    /// Cuál se resalta: true subir, false bajar, nil ninguno (solo al abrir la app).
-    @State private var volumeHighlight: Bool?
+    /// Lo que se muestra ahora sobre el panel, si hay algo.
+    @State private var volumeCue: VolumeCue?
     /// Cambia con cada aviso para reiniciar la cuenta atrás que lo oculta.
-    @State private var volumeSignsID = 0
+    @State private var volumeCueID = 0
 
     private var isConnected: Bool { client.state == .connected }
     private var hasTV: Bool { !ip.trimmingCharacters(in: .whitespaces).isEmpty }
@@ -47,17 +47,23 @@ struct RemoteView: View {
         .padding(.vertical, 12)
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .background(Color.black.ignoresSafeArea())
-        // A la izquierda y arriba, para que caigan junto a los botones físicos del iPhone.
+        // A la izquierda y arriba, donde el pulgar espera el volumen.
         .overlay(alignment: .topLeading) {
-            if showVolumeSigns {
-                VolumeSigns(highlighted: volumeHighlight)
+            if let volumeCue, volumeCue != .hint {
+                VolumeSigns(cue: volumeCue)
                     .padding(.top, 104)
                     .padding(.leading, 12)
                     .transition(.opacity.combined(with: .scale(scale: 0.85)))
             }
         }
-        .animation(.snappy(duration: 0.2), value: showVolumeSigns)
-        .animation(.snappy(duration: 0.2), value: volumeHighlight)
+        .overlay(alignment: .center) {
+            if volumeCue == .hint {
+                VolumeGestureHint()
+                    .padding(.horizontal, 24)
+                    .transition(.opacity.combined(with: .scale(scale: 0.92)))
+            }
+        }
+        .animation(.snappy(duration: 0.2), value: volumeCue)
         .sensoryFeedback(.impact(weight: .light), trigger: tapCount)
         .sheet(isPresented: $showSettings) {
             searchOnOpenSettings = false
@@ -66,7 +72,7 @@ struct RemoteView: View {
             SettingsView(searchOnOpen: searchOnOpenSettings)
         }
         .sheet(isPresented: $showGuide) {
-            guideSeen = true
+            guideVersion = TVConfig.guideVersion
         } content: {
             GuideView(onSearch: {
                 searchOnOpenSettings = true
@@ -81,15 +87,17 @@ struct RemoteView: View {
         // Conecta al abrir, al volver a primer plano y al cerrar ajustes (por si cambió la IP).
         .onAppear {
             client.connect(host: ip)
-            if hasTV { showSigns(highlight: nil) }
-            // La guía sale la primera vez y mientras no haya un TV configurado.
-            if !guideSeen || !hasTV { showGuide = true }
+            // La guía sale la primera vez, cuando trae novedades y mientras no haya TV.
+            if guideVersion < TVConfig.guideVersion || !hasTV { showGuide = true }
+        }
+        .onChange(of: isConnected) {
+            guard isConnected, !showGuide else { return }
+            remindVolumeGesture()
         }
         .onChange(of: scenePhase) {
             switch scenePhase {
             case .active:
                 if client.state == .disconnected { client.connect(host: ip) }
-                if hasTV { showSigns(highlight: nil) }
             case .background:
                 client.disconnect()
             default:
@@ -152,8 +160,13 @@ struct RemoteView: View {
 
     private var remote: some View {
         VStack(spacing: 20) {
-            TouchPad(direction: { client.sendKey($0) }, select: { client.sendKey(.ok) })
-                .disabled(!isConnected)
+            TouchPad(
+                direction: { client.sendKey($0) },
+                select: { client.sendKey(.ok) },
+                volume: volumeChanged,
+                mute: muteTapped
+            )
+            .disabled(!isConnected)
                 // Un 10% más ancho que el resto del mando: se come parte del margen lateral.
                 .padding(.horizontal, -18)
 
@@ -175,22 +188,10 @@ struct RemoteView: View {
         }
         .frame(maxHeight: .infinity)
         .opacity(isConnected ? 1 : 0.85)
-        // Los botones físicos de volumen del iPhone mandan al TV mientras haya conexión.
-        .background(alignment: .topLeading) {
-            VolumeButtons(isActive: isConnected && scenePhase == .active) { up in
-                tapCount += 1
-                client.sendKey(up ? .volumeUp : .volumeDown)
-                showSigns(highlight: up)
-            }
-            .frame(width: 1, height: 1)
-        }
-        .task(id: volumeSignsID) {
-            guard showVolumeSigns else { return }
-            try? await Task.sleep(for: .seconds(volumeHighlight == nil ? 2.5 : 1.2))
-            if !Task.isCancelled {
-                showVolumeSigns = false
-                volumeHighlight = nil
-            }
+        .task(id: volumeCueID) {
+            guard let volumeCue else { return }
+            try? await Task.sleep(for: .seconds(volumeCue == .hint ? 3.5 : 1.2))
+            if !Task.isCancelled { self.volumeCue = nil }
         }
     }
 
@@ -214,11 +215,37 @@ struct RemoteView: View {
 
     // MARK: - Acciones
 
-    /// Muestra los signos de volumen. Cada aviso reinicia la cuenta atrás que los oculta.
-    private func showSigns(highlight: Bool?) {
-        volumeHighlight = highlight
-        showVolumeSigns = true
-        volumeSignsID += 1
+    /// Muestra algo sobre el panel. Cada aviso reinicia la cuenta atrás que lo oculta.
+    private func show(_ cue: VolumeCue) {
+        volumeCue = cue
+        volumeCueID += 1
+    }
+
+    /// Volumen con dos dedos en el panel.
+    private func volumeChanged(up: Bool) {
+        volumeGestureUsed = true
+        client.sendKey(up ? .volumeUp : .volumeDown)
+        show(up ? .up : .down)
+    }
+
+    /// Silencio con dos dedos. El estado que se muestra se le pregunta al televisor,
+    /// que es el único que lo sabe de verdad.
+    private func muteTapped() {
+        volumeGestureUsed = true
+        client.sendKey(.mute)
+        show(.mute(nil))
+        Task {
+            try? await Task.sleep(for: .seconds(0.5))
+            let muted = await TVMute.isMuted(host: ip)
+            if volumeCue != nil, muted != nil { show(.mute(muted)) }
+        }
+    }
+
+    /// Recordatorio del gesto: dos veces como mucho, y nunca si ya se usó.
+    private func remindVolumeGesture() {
+        guard !volumeGestureUsed, volumeHintCount < 2 else { return }
+        volumeHintCount += 1
+        show(.hint)
     }
 
     private func press(_ key: RemoteKey) {
