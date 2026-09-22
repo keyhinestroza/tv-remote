@@ -1,0 +1,56 @@
+# Proyecto generado con XcodeGen:  xcodegen generate
+name: TVRemote
+
+options:
+  bundleIdPrefix: com.key
+  deploymentTarget:
+    iOS: "17.0"
+  createIntermediateGroups: true
+  # La app está en español: sin esto, los errores del sistema salen en inglés.
+  # Base en inglés: cualquier idioma que no sea español ni inglés cae en inglés.
+  developmentLanguage: en
+  # Mantiene lo que Xcode aplicó al abrir el proyecto: sin esto, cada regeneración
+  # vuelve a pedir "Update to recommended settings".
+  xcodeVersion: "27.0"
+
+settings:
+  base:
+    ENABLE_USER_SCRIPT_SANDBOXING: YES
+    # No usamos los símbolos que Xcode genera del catálogo, y claves como "Vol +" y
+    # "Vol −" generarían el mismo nombre.
+    STRING_CATALOG_GENERATE_SYMBOLS: NO
+
+targets:
+  TVRemote:
+    type: application
+    platform: iOS
+    sources:
+      - path: TVRemote
+    info:
+      path: TVRemote/Info.plist
+      properties:
+        CFBundleDisplayName: TV Remote
+        CFBundleShortVersionString: "1.0"
+        CFBundleVersion: "1"
+        UILaunchScreen: {}
+        UISupportedInterfaceOrientations:
+          - UIInterfaceOrientationPortrait
+        NSLocalNetworkUsageDescription: The local network is used to find your TV, connect to it and send it the remote control commands.
+        # Sin esto, iOS no deja buscar el TV por Bonjour.
+        NSBonjourServices:
+          - _samsungmsf._tcp
+        # Solo se usa el TLS del sistema y el Keychain: cifrado exento.
+        ITSAppUsesNonExemptEncryption: false
+        NSAppTransportSecurity:
+          NSAllowsLocalNetworking: true
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.key.tvremote
+        MARKETING_VERSION: "1.0"
+        CURRENT_PROJECT_VERSION: "1"
+        SWIFT_VERSION: "5.0"
+        TARGETED_DEVICE_FAMILY: "1"
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        CODE_SIGN_STYLE: Automatic
+        DEVELOPMENT_TEAM: 25BVK345XH
+        GENERATE_INFOPLIST_FILE: NO

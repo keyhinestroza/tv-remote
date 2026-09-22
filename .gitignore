@@ -1,0 +1,21 @@
+# Entornos y basura del sistema
+.venv/
+.DS_Store
+
+# Datos del televisor de quien desarrolla: no se publican
+config.json
+tv_token.txt
+
+# Compilación de Xcode
+build/
+DerivedData/
+*.xcodeproj/xcuserdata/
+*.xcodeproj/project.xcworkspace/xcuserdata/
+*.xcworkspace/xcuserdata/
+
+# Android (para cuando llegue)
+*.iml
+.gradle/
+local.properties
+android/build/
+android/app/build/

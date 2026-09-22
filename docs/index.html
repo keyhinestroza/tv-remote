@@ -1,0 +1,311 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Política de privacidad de la app Remoto TV / TV Remote para iPhone.">
+<style>
+  :root { color-scheme: light dark; }
+  body { margin: 0; }
+  img { max-width: 100%; }
+  [hidden] { display: none !important; }
+</style>
+<title>Remoto TV · Privacidad</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+  :root {
+    --bg: #F4F6F8;
+    --surface: #FFFFFF;
+    --ink: #171D24;
+    --muted: #5B6875;
+    --accent: #2F6690;
+    --line: #E1E6EB;
+    --slate-1: #3A424E;
+    --slate-2: #1A1F26;
+    --shadow: 0 1px 2px rgba(23, 29, 36, .06), 0 12px 32px -18px rgba(23, 29, 36, .28);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #10141A;
+      --surface: #171D25;
+      --ink: #E8EDF3;
+      --muted: #97A4B2;
+      --accent: #7FB2DD;
+      --line: #252D37;
+      --shadow: 0 1px 2px rgba(0, 0, 0, .4), 0 16px 40px -22px rgba(0, 0, 0, .8);
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #10141A;
+    --surface: #171D25;
+    --ink: #E8EDF3;
+    --muted: #97A4B2;
+    --accent: #7FB2DD;
+    --line: #252D37;
+    --shadow: 0 1px 2px rgba(0, 0, 0, .4), 0 16px 40px -22px rgba(0, 0, 0, .8);
+  }
+
+  body {
+    background: var(--bg);
+    color: var(--ink);
+    font-family: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    font-size: 16px;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap {
+    max-width: 44rem;
+    margin: 0 auto;
+    padding-inline: 20px;
+    padding-block: 40px 72px;
+  }
+
+  header.masthead {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    flex-wrap: wrap;
+    padding-bottom: 28px;
+    border-bottom: 1px solid var(--line);
+  }
+  .mark { width: 52px; height: 52px; border-radius: 13px; flex: none; box-shadow: var(--shadow); }
+  .masthead .names { display: flex; flex-direction: column; gap: 2px; }
+  .app-name { font-size: 1.05rem; font-weight: 600; letter-spacing: -.01em; }
+  .eyebrow {
+    font-family: "IBM Plex Mono", ui-monospace, monospace;
+    font-size: .72rem;
+    text-transform: uppercase;
+    letter-spacing: .12em;
+    color: var(--muted);
+  }
+  .langs { margin-left: auto; display: flex; gap: 4px; background: var(--surface); border: 1px solid var(--line); border-radius: 999px; padding: 3px; }
+  .langs button {
+    font: 500 .8rem/1 "IBM Plex Mono", ui-monospace, monospace;
+    letter-spacing: .06em;
+    color: var(--muted);
+    background: none;
+    border: 0;
+    padding: 7px 12px;
+    border-radius: 999px;
+    cursor: pointer;
+  }
+  .langs button[aria-pressed="true"] { background: var(--accent); color: var(--surface); }
+  .langs button:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+  h1 {
+    font-family: "Instrument Serif", Georgia, serif;
+    font-weight: 400;
+    font-size: clamp(2.1rem, 7vw, 2.9rem);
+    line-height: 1.1;
+    letter-spacing: -.01em;
+    text-wrap: balance;
+    margin: 36px 0 10px;
+  }
+  .updated { color: var(--muted); font-size: .9rem; margin-bottom: 30px; }
+  .lead {
+    font-size: 1.12rem;
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-left: 3px solid var(--accent);
+    border-radius: 4px 12px 12px 4px;
+    padding: 20px 22px;
+    box-shadow: var(--shadow);
+    margin-bottom: 38px;
+  }
+  .lead strong { font-weight: 600; }
+
+  section { margin-bottom: 34px; }
+  h2 {
+    font-size: 1.12rem;
+    font-weight: 600;
+    letter-spacing: -.005em;
+    margin: 0 0 10px;
+  }
+  p { margin: 0 0 14px; }
+  p:last-child { margin-bottom: 0; }
+  .stored { list-style: none; margin: 14px 0 0; padding: 0; display: flex; flex-direction: column; gap: 1px; background: var(--line); border: 1px solid var(--line); border-radius: 12px; overflow: hidden; }
+  .stored li { background: var(--surface); padding: 14px 18px; }
+  .stored .what { font-weight: 600; font-size: .95rem; }
+  .stored .where {
+    font-family: "IBM Plex Mono", ui-monospace, monospace;
+    font-size: .76rem;
+    color: var(--muted);
+    letter-spacing: .02em;
+  }
+  footer {
+    margin-top: 48px;
+    padding-top: 22px;
+    border-top: 1px solid var(--line);
+    color: var(--muted);
+    font-size: .88rem;
+  }
+  a { color: var(--accent); }
+  [lang]:not([lang="es"]):not([lang="en"]) { display: none; }
+</style>
+
+<div class="wrap">
+  <header class="masthead">
+    <svg class="mark" viewBox="0 0 100 100" role="img" aria-label="Remoto TV">
+      <defs>
+        <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0" stop-color="#3A424E"/><stop offset="1" stop-color="#1A1F26"/>
+        </linearGradient>
+      </defs>
+      <rect width="100" height="100" rx="23" fill="url(#bg)"/>
+      <g fill="none" stroke="#E4ECF5" stroke-linecap="round">
+        <path d="M32 41a25 25 0 0 1 36 0" stroke-width="3.4" opacity=".5"/>
+        <path d="M38.5 48.5a16.5 16.5 0 0 1 23 0" stroke-width="3.4" opacity=".72"/>
+        <path d="M50 35v20" stroke-width="5.2" stroke-linecap="round" transform="translate(0 21)"/>
+        <path d="M38.5 62.5a14 14 0 1 0 23 0" stroke-width="5.2"/>
+      </g>
+    </svg>
+    <div class="names">
+      <span class="app-name" lang="es">Remoto TV</span>
+      <span class="app-name" lang="en" hidden>TV Remote</span>
+      <span class="eyebrow" lang="es">Política de privacidad</span>
+      <span class="eyebrow" lang="en" hidden>Privacy policy</span>
+    </div>
+    <div class="langs" role="group" aria-label="Idioma / Language">
+      <button type="button" id="btn-es" aria-pressed="true">ES</button>
+      <button type="button" id="btn-en" aria-pressed="false">EN</button>
+    </div>
+  </header>
+
+  <main>
+    <div lang="es">
+      <h1>Nada de lo que haces aquí sale de tu casa</h1>
+      <p class="updated">Última actualización: 22 de septiembre de 2026</p>
+
+      <p class="lead">Remoto TV es un control remoto para televisores de tu red local. <strong>No recoge ningún dato.</strong> No hay cuentas, ni analítica, ni publicidad, ni componentes de terceros, y la app no envía información a sus desarrolladores ni a ningún servidor de internet.</p>
+
+      <section>
+        <h2>Qué se guarda en tu iPhone</h2>
+        <p>Todo lo que la app necesita recordar se queda en el dispositivo:</p>
+        <ul class="stored">
+          <li>
+            <div class="what">La dirección de red y la MAC del televisor que elijas</div>
+            <div class="where">Ajustes de la app · sirven para conectarse y para encenderlo por la red</div>
+          </li>
+          <li>
+            <div class="what">El nombre y el modelo del televisor</div>
+            <div class="where">Ajustes de la app · solo para mostrarlos en la pantalla de ayuda</div>
+          </li>
+          <li>
+            <div class="what">El idioma elegido y si ya viste la guía de inicio</div>
+            <div class="where">Ajustes de la app</div>
+          </li>
+          <li>
+            <div class="what">La autorización que entrega el televisor</div>
+            <div class="where">Keychain de iOS · evita que el TV vuelva a pedir permiso en cada conexión</div>
+          </li>
+        </ul>
+        <p style="margin-top:14px">Nada de esto sale del iPhone. Si borras la app, se borra todo con ella.</p>
+      </section>
+
+      <section>
+        <h2>Por qué la app pide acceso a la red local</h2>
+        <p>iOS pide tu permiso antes de que una app pueda hablar con otros dispositivos de tu red. Remoto TV lo usa solo para dos cosas: encontrar tu televisor y enviarle las órdenes del mando. La app no guarda información sobre los demás dispositivos que aparezcan en la búsqueda.</p>
+      </section>
+
+      <section>
+        <h2>Menores</h2>
+        <p>La app no recoge datos, así que su uso por menores no supone ningún tratamiento de información personal.</p>
+      </section>
+
+      <section>
+        <h2>Cambios en esta política</h2>
+        <p>Si la política cambia, la nueva versión se publicará en esta misma dirección con una fecha de actualización distinta.</p>
+      </section>
+
+      <section>
+        <h2>Contacto</h2>
+        <p>Para cualquier duda sobre esta política: <a href="mailto:CORREO@EJEMPLO.COM">CORREO@EJEMPLO.COM</a>.</p>
+      </section>
+    </div>
+
+    <div lang="en" hidden>
+      <h1>Nothing you do here leaves your home</h1>
+      <p class="updated">Last updated: 22 September 2026</p>
+
+      <p class="lead">TV Remote is a remote control for televisions on your local network. <strong>It collects no data.</strong> There are no accounts, no analytics, no advertising and no third-party components, and the app sends nothing to its developers or to any server on the internet.</p>
+
+      <section>
+        <h2>What is stored on your iPhone</h2>
+        <p>Everything the app needs to remember stays on the device:</p>
+        <ul class="stored">
+          <li>
+            <div class="what">The network address and MAC address of the TV you choose</div>
+            <div class="where">App settings · used to connect and to switch it on over the network</div>
+          </li>
+          <li>
+            <div class="what">The TV's name and model</div>
+            <div class="where">App settings · only to show them on the help screen</div>
+          </li>
+          <li>
+            <div class="what">Your chosen language and whether you have seen the setup guide</div>
+            <div class="where">App settings</div>
+          </li>
+          <li>
+            <div class="what">The authorisation the TV issues</div>
+            <div class="where">iOS Keychain · so the TV does not ask for permission on every connection</div>
+          </li>
+        </ul>
+        <p style="margin-top:14px">None of this leaves the iPhone. Deleting the app deletes all of it.</p>
+      </section>
+
+      <section>
+        <h2>Why the app asks for local network access</h2>
+        <p>iOS asks for your permission before an app can talk to other devices on your network. TV Remote uses it for two things only: finding your television and sending it remote control commands. The app keeps no information about any other device that shows up in the search.</p>
+      </section>
+
+      <section>
+        <h2>Children</h2>
+        <p>The app collects no data, so its use by children involves no processing of personal information.</p>
+      </section>
+
+      <section>
+        <h2>Changes to this policy</h2>
+        <p>If this policy changes, the new version will be published at this same address with a different update date.</p>
+      </section>
+
+      <section>
+        <h2>Contact</h2>
+        <p>For any questions about this policy: <a href="mailto:EMAIL@EXAMPLE.COM">EMAIL@EXAMPLE.COM</a>.</p>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <span lang="es">Remoto TV para iPhone · el mando funciona dentro de tu red, sin conexión a internet.</span>
+    <span lang="en" hidden>TV Remote for iPhone · the remote works inside your network, with no internet connection.</span>
+  </footer>
+</div>
+
+<script>
+  (function () {
+    var buttons = { es: document.getElementById("btn-es"), en: document.getElementById("btn-en") };
+
+    function apply(lang) {
+      document.querySelectorAll('[lang="es"], [lang="en"]').forEach(function (el) {
+        el.hidden = el.getAttribute("lang") !== lang;
+      });
+      buttons.es.setAttribute("aria-pressed", String(lang === "es"));
+      buttons.en.setAttribute("aria-pressed", String(lang === "en"));
+      document.documentElement.setAttribute("lang", lang);
+      try { localStorage.setItem("policyLang", lang); } catch (e) {}
+    }
+
+    var saved = null;
+    try { saved = localStorage.getItem("policyLang"); } catch (e) {}
+    var initial = saved || ((navigator.language || "en").toLowerCase().indexOf("es") === 0 ? "es" : "en");
+
+    buttons.es.addEventListener("click", function () { apply("es"); });
+    buttons.en.addEventListener("click", function () { apply("en"); });
+    apply(initial);
+  })();
+</script>
+
+</body>
+</html>
