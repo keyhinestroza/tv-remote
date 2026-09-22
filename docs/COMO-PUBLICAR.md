@@ -15,11 +15,6 @@ y subir el cambio; la página se reconstruye sola en un par de minutos.
 git add docs/index.html && git commit -m "Actualiza la política de privacidad" && git push
 ```
 
-## Pendiente
-
-El correo de contacto está como marcador: `CORREO@EJEMPLO.COM` en la versión en español
-y `EMAIL@EXAMPLE.COM` en la inglesa. Cámbialos por el tuyo antes de enviar la app a revisión.
-
 ## Configuración
 
 Repositorio → **Settings › Pages**: origen `Deploy from a branch`, rama `main`, carpeta `/docs`.
