@@ -1,15 +1,25 @@
-# Publicar la política de privacidad en GitHub Pages
+# La política de privacidad
 
-`index.html` de esta carpeta es la misma política que está publicada como página de Claude,
-pero como documento independiente. Sirve si algún día quieres la URL en un dominio propio.
+`index.html` es la política completa, en español e inglés, y está **publicada** en:
 
-1. Crea un repositorio en GitHub (puede ser público y vacío), por ejemplo `tv-remote`.
-2. Sube esta carpeta `docs/` tal cual.
-3. En el repositorio: **Settings › Pages**. En *Source* elige `Deploy from a branch`,
-   rama `main` y carpeta `/docs`. Guarda.
-4. A los pocos minutos la página queda en
-   `https://TU-USUARIO.github.io/tv-remote/`.
-5. Pega esa dirección en App Store Connect, en *App Privacy › Privacy Policy URL*.
+**https://keyhinestroza.github.io/tv-remote/**
 
-Antes de publicar, cambia `CORREO@EJEMPLO.COM` y `EMAIL@EXAMPLE.COM` por tu correo de contacto
-(están una vez en cada idioma).
+Esa es la dirección que va en App Store Connect, en *App Privacy › Privacy Policy URL*.
+
+## Cómo se actualiza
+
+GitHub Pages sirve esta carpeta desde la rama `main`. Basta con editar `index.html`
+y subir el cambio; la página se reconstruye sola en un par de minutos.
+
+```sh
+git add docs/index.html && git commit -m "Actualiza la política de privacidad" && git push
+```
+
+## Pendiente
+
+El correo de contacto está como marcador: `CORREO@EJEMPLO.COM` en la versión en español
+y `EMAIL@EXAMPLE.COM` en la inglesa. Cámbialos por el tuyo antes de enviar la app a revisión.
+
+## Configuración
+
+Repositorio → **Settings › Pages**: origen `Deploy from a branch`, rama `main`, carpeta `/docs`.

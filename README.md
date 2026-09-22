@@ -53,4 +53,5 @@ python3 -m venv .venv && .venv/bin/pip install samsungtvws
 
 La app no recoge ningún dato. Todo lo que guarda (la dirección del televisor, el idioma
 y la autorización que entrega el propio televisor) se queda en el teléfono.
-La política completa está en `docs/index.html`.
+La política completa está publicada en **https://keyhinestroza.github.io/tv-remote/**
+y su fuente es `docs/index.html`.

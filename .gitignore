@@ -9,9 +9,9 @@ tv_token.txt
 # Compilación de Xcode
 build/
 DerivedData/
-*.xcodeproj/xcuserdata/
-*.xcodeproj/project.xcworkspace/xcuserdata/
-*.xcworkspace/xcuserdata/
+# Estado personal de Xcode (con ** para que valga a cualquier profundidad)
+**/xcuserdata/
+**/*.xcuserdatad/
 
 # Android (para cuando llegue)
 *.iml
